@@ -1,5 +1,22 @@
-type RootTabParamList = {
+interface RootTabParamList {
 
 }
+interface CarouselParams {
+    data: Data[]
+}
 
-export type {RootTabParamList}
+interface Data {
+    id: string,
+    title: string
+}
+
+interface MovieCardParams {
+    movie: any,
+    onPress: any
+}
+export type {
+    RootTabParamList,
+    CarouselParams,
+    Data,
+    MovieCardParams
+};
